@@ -1,0 +1,117 @@
+.type-3050 {
+    @primary-color: #FF5722;
+    @icon-size: 40px;
+    @background-color: #f5f5f5;
+    @icon-color: #333;
+    @hover-icon-color: white;
+    @border-color: #ccc;
+    @focus-border-color: #ff5722;
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+    }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 20px; // Khoảng cách giữa các biểu tượng
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: @icon-size;
+        height: @icon-size;
+        border-radius: 50%;
+        background-color: @background-color;
+        font-size: 16px;
+        color: @icon-color;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-decoration: none;
+
+        i {
+            line-height: 1; // Đảm bảo biểu tượng căn giữa
+        }
+    }
+
+    .facebook:hover {
+        background-color: rgb(56, 108, 164);
+        color: @hover-icon-color;
+    }
+
+    .twitter:hover {
+        background-color: rgb(108, 177, 245);
+        color: @hover-icon-color;
+    }
+
+    .instagram:hover {
+        background-color: rgb(28, 74, 120);
+        color: @hover-icon-color;
+    }
+
+    .youtube:hover {
+        background-color: rgb(193, 10, 31);
+        color: @hover-icon-color;
+    }
+
+    .phone-number {
+        font-size: 28px;
+        background: @background-color;
+        padding: 5px 30px 5px 70px;
+        position: relative;
+        display: inline-block;
+        line-height: 1.7;
+        text-align: left;
+        height: 55px;
+        border-radius: 100px;
+
+        .icon-phone {
+            position: absolute;
+            background-color: @icon-color;
+            width: 55px;
+            text-align: center;
+            color: #fff;
+            line-height: 53px;
+            left: 0;
+            top: 0;
+            font-size: 30px;
+            border-radius: 50%;
+        }
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+
+        .btn-send {
+            background-color: @icon-color;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 180px;
+
+            &:hover {
+                background-color: @primary-color;
+                transition: 0.2s;
+            }
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid @border-color;
+            background-color: @background-color;
+            outline: none;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border: 3px solid @focus-border-color;
+            }
+        }
+    }
+}

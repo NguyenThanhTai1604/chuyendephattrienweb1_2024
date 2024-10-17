@@ -1,0 +1,31 @@
+.type-3034 .card {
+  border-color: #ffffff;
+}
+.type-3034 .card-header {
+  background-color: #43c3ea;
+  color: #ffffff;
+  border-radius: 0 !important;
+  padding: 15px;
+}
+.type-3034 .table-bordered {
+  border: 1px solid #f7f7f7;
+}
+.type-3034 .table-bordered th,
+.type-3034 .table-bordered td {
+  border: 1px solid #f7f7f7;
+}
+.type-3034 .breadcrumb-item-active {
+  color: #43c3ea;
+}
+.type-3034 .breadcrumb>li+li::before {
+  content: ' \25B8';
+  font-weight: bold;
+  color: #43c3ea;
+}
+.type-3034 .breadcrumb {
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
